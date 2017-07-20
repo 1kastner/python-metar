@@ -1193,6 +1193,3 @@ class Metar(object):
       Return the decoded remarks.
       """
       return sep.join(self._remarks)
-
-
-
