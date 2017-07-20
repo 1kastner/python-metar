@@ -414,8 +414,6 @@ class Metar(object):
               warnings.warn(message, RuntimeWarning)
           else:
               raise ParserError(message)
-              
-
 
   def _do_trend_handlers(self, code):
       for pattern, handler, repeatable in Metar.trend_handlers:
@@ -711,7 +709,7 @@ class Metar(object):
   def _handleRunwayState( self, d ):
       """
       Parse (and ignore) the runway state.
-      
+
       The following attributes are set:
       """
       pass
@@ -1195,3 +1193,6 @@ class Metar(object):
       Return the decoded remarks.
       """
       return sep.join(self._remarks)
+
+
+
